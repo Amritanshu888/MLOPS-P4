@@ -1,0 +1,15 @@
+from src.textSummarizer.config.configuration import ConfigurationManager
+from src.textSummarizer.components.Data_Ingestion import DataIngestion
+from src.textSummarizer.logging import logger
+
+class DataIngestionTrainingPipeline:
+    def __init__(self):
+        pass
+
+    def initiate_data_ingestion(self):
+        config = ConfigurationManager()
+        data_ingestion_config = config.get_data_ingestion_config()
+        data_ingestion = DataIngestion(config = data_ingestion_config) ## Initializing our component
+        data_ingestion.download_file()
+        data_ingestion.extract_zip_file()
+    ## After creating the stages of training pipeline we will test it out in main.py    

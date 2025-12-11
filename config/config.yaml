@@ -1,0 +1,9 @@
+artifacts_root: artifacts ## artifacts_root folder is the output of any module over here i.e. root directory of the output
+
+
+## In data ingestion our main aim is to read the dataset or load the dataset from where its coming
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  source_URL: https://github.com/krishnaik06/datasets/raw/refs/heads/main/summarizer-data.zip
+  local_data_file: artifacts/data_ingestion/data.zip
+  unzip_dir: artifacts/data_ingestion

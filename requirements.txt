@@ -18,3 +18,5 @@ ensure==1.0.2
 fastapi==0.78.0 ## FastAPI will be used just to create a simple API for this project
 uvicorn==0.18.3
 Jinja2==3.1.2
+nvidia-smi
+sentencepiece
